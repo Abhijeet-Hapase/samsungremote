@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/settingsDiscover"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/ok_bg_rect"
+            android:stateListAnimator="@null"
+            android:text="Find TVs on this Wi-Fi"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/settingsDiscoverStatus"
+            style="@style/Label"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="The TV must be switched on and on the same Wi-Fi as this phone." />
+
+        <LinearLayout
+            android:id="@+id/settingsFound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <TextView
+            style="@style/Label"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp"
+            android:text="TV IP address" />
+
+        <EditText
+            android:id="@+id/settingsIp"
+            style="@style/Field"
+            android:digits="0123456789."
+            android:hint="192.168.1.20"
+            android:importantForAutofill="no"
+            android:inputType="number|numberDecimal" />
+
+        <TextView
+            style="@style/Label"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="6dp"
+            android:text="TV MAC address (used to switch the TV on)" />
+
+        <EditText
+            android:id="@+id/settingsMac"
+            style="@style/Field"
+            android:hint="Filled in automatically once connected"
+            android:importantForAutofill="no"
+            android:inputType="textNoSuggestions|textCapCharacters" />
+
+        <Button
+            android:id="@+id/settingsForget"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_bg"
+            android:stateListAnimator="@null"
+            android:text="Forget pairing"
+            android:textAllCaps="false"
+            android:textColor="@color/text"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/Label"
+            android:layout_width="match_parent"
+            android:layout_marginTop="14dp"
+            android:text="To switch the TV on from this app, enable Power On with Mobile on the TV. It is usually under Settings, General, Network, Expert Settings." />
+    </LinearLayout>
+</ScrollView>

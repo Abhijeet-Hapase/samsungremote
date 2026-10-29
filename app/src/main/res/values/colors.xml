@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0E0F13</color>
+    <color name="surface">#1C1E25</color>
+    <color name="surface_pressed">#2E313B</color>
+    <color name="dpad">#16181E</color>
+    <color name="dpad_stroke">#262932</color>
+    <color name="text">#ECEEF2</color>
+    <color name="text_dim">#8A8F9C</color>
+    <color name="accent">#3D7BFF</color>
+    <color name="accent_pressed">#2E5FCC</color>
+    <color name="power">#C62828</color>
+    <color name="power_pressed">#8E1B1B</color>
+    <color name="status_ok">#34C759</color>
+    <color name="status_wait">#FFB020</color>
+    <color name="status_bad">#FF4D4F</color>
+    <color name="launcher_bg">#1A2A6C</color>
+</resources>
